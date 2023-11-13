@@ -14,10 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@grpc/grpc-js": "^1.9.9",
+    "@grpc/grpc-js": "1.8.12",
     "google-protobuf": "^3.21.2"
   },
   "devDependencies": {
-    "grpc-tools": "^1.11.3"
+    "grpc-tools": "1.11.3"
   }
 }
