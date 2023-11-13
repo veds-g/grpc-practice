@@ -1,18 +1,18 @@
-const grpc = require("@grpc/grpc-js");
-const {GreetServiceClient} = require("../proto/greet_grpc_pb");
-const {GreetRequest} = require("../proto/greet_pb");
+const grpc = require('@grpc/grpc-js');
+const {GreetServiceClient} = require('../proto/greet_grpc_pb');
+const {GreetRequest} = require('../proto/greet_pb');
 
 function doGreet(client) {
     console.log("doGreet was invoked");
-    const req = new greet_pb.GreetRequest().setFirstName("Devil");
+    const req = new GreetRequest().setFirstName("Devil");
 
-    client.greet(req, (res, err) => {
+    client.greet(req, (err, res) => {
         if (err) {
             return console.log(err);
         }
 
         console.log(`Greet: ${res.getResult()}`);
-    })
+    });
 }
 
 function main() {

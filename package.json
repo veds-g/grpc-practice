@@ -6,6 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "pb:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 greet",
+    "pb:mac:gen": "./scripts/gen.sh greet",
     "greet:server": "node greet/server/index.js",
     "greet:client": "node greet/client/index.js"
   },

@@ -5,4 +5,4 @@ exports.greet = (call, callback) => {
     const res = new pb.GreetResponse().setResult(`Hello ${call.request.getFirstName()}`);
 
     callback(null, res);
-}
+};
