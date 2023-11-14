@@ -26,7 +26,11 @@
     "max:server": "node max/server/index.js",
     "max:client": "node max/client/index.js",
     "max:pb:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 max",
-    "max:pb:mac:gen": "./scripts/gen.sh max"
+    "max:pb:mac:gen": "./scripts/gen.sh max",
+    "sqrt:server": "node sqrt/server/index.js",
+    "sqrt:client": "node sqrt/client/index.js",
+    "sqrt:pb:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 sqrt",
+    "sqrt:pb:mac:gen": "./scripts/gen.sh sqrt"
   },
   "keywords": [],
   "author": "",
