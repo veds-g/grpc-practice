@@ -30,14 +30,20 @@
     "sqrt:server": "node sqrt/server/index.js",
     "sqrt:client": "node sqrt/client/index.js",
     "sqrt:pb:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 sqrt",
-    "sqrt:pb:mac:gen": "./scripts/gen.sh sqrt"
+    "sqrt:pb:mac:gen": "./scripts/gen.sh sqrt",
+    "blog:server": "node blog/server/index.js",
+    "blog:client": "node blog/client/index.js",
+    "blog:pb:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 blog",
+    "blog:pb:mac:gen": "./scripts/gen.sh blog",
+    "blog:db": "cd blog; docker-compose up; cd .."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@grpc/grpc-js": "1.8.12",
-    "google-protobuf": "^3.21.2"
+    "google-protobuf": "^3.21.2",
+    "mongodb": "^6.2.0"
   },
   "devDependencies": {
     "grpc-tools": "1.11.3"
